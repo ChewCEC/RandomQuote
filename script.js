@@ -27,5 +27,4 @@ addEventListener('DOMContentLoaded', () => {
         navigator.clipboard.writeText(text);
     });
 
-
 });
