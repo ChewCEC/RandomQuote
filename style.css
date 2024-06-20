@@ -8,6 +8,15 @@ body{
     background-color: #111729;
 }
 
+/* apliying google fonts to the body */
+body{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 265;
+    font-style: normal;
+}
+
+
 .quote-generator{
     background-image: url("./Resources/bg-image-random-quote.svg");
     background-size: cover;
@@ -20,17 +29,40 @@ body{
     
 }
 
-.quote-tags{
+#quote-Autor {
+    color: #fbfbfb; /* Color del texto */
+    font-size: 17px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Margen superior */
+    font-weight: 500;
+}
+
+.quote-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Espacio entre los tags */
+    justify-content: center; /* Centrar los tags */
+    margin-top: 10px; /* Margen superior */
+}
+
+.tag{
     background-color: transparent;
     color: #6466E9; /* Color del texto */
     border: 2px solid #6466E9; /* Borde */
     border-radius: 25px; /* Borde redondeado */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 10; /* Tamaño del texto */
+    padding: 7px 16px; /* Espaciado interno */
+    font-size: 15px; /* Tamaño del texto */
     text-align: center; /* Alineación del texto */
     display: inline-block; /* Para permitir el padding y los márgenes */
-    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
     transition: background-color 0.3s ease; /* Efecto de transición */
+    margin: 5px; /* Margen */
+}
+
+#quote-text{
+    color: #97A3B6;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+
 }
 
 .quote-buttons{
