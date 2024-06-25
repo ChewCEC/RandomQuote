@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ body{
 }
 
 /* apliying google fonts to the body */
-body{
+body {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 265;
@@ -17,7 +17,7 @@ body{
 }
 
 
-.quote-generator{
+.quote-generator {
     background-image: url("./Resources/bg-image-random-quote.svg");
     background-size: cover;
     background-color: #20293A;
@@ -26,38 +26,53 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: auto;
-    
+
 }
 
 #quote-Autor {
-    color: #fbfbfb; /* Color del texto */
-    font-size: 17px; /* Tamaño del texto */
-    margin-bottom: 10px; /* Margen superior */
+    color: #fbfbfb;
+    /* Color del texto */
+    font-size: 24px;
+    /* Tamaño del texto */
+    margin-bottom: 10px;
+    /* Margen superior */
     font-weight: 500;
 }
 
 .quote-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px; /* Espacio entre los tags */
-    justify-content: center; /* Centrar los tags */
-    margin-top: 10px; /* Margen superior */
+    gap: 8px;
+    /* Espacio entre los tags */
+    justify-content: center;
+    /* Centrar los tags */
+    margin-top: 10px;
+    /* Margen superior */
 }
 
-.tag{
+.tag {
     background-color: transparent;
-    color: #6466E9; /* Color del texto */
-    border: 2px solid #6466E9; /* Borde */
-    border-radius: 25px; /* Borde redondeado */
-    padding: 7px 16px; /* Espaciado interno */
-    font-size: 15px; /* Tamaño del texto */
-    text-align: center; /* Alineación del texto */
-    display: inline-block; /* Para permitir el padding y los márgenes */
-    transition: background-color 0.3s ease; /* Efecto de transición */
-    margin: 5px; /* Margen */
+    color: #6466E9;
+    /* Color del texto */
+    border: 2px solid #6466E9;
+    /* Borde */
+    border-radius: 25px;
+    /* Borde redondeado */
+    padding: 7px 16px;
+    /* Espaciado interno */
+    font-size: 15px;
+    /* Tamaño del texto */
+    text-align: center;
+    /* Alineación del texto */
+    display: inline-block;
+    /* Para permitir el padding y los márgenes */
+    transition: background-color 0.3s ease;
+    /* Efecto de transición */
+    margin: 5px;
+    /* Margen */
 }
 
-#quote-text{
+#quote-text {
     color: #97A3B6;
     font-size: 20px;
     margin-bottom: 10px;
@@ -65,24 +80,57 @@ body{
 
 }
 
-.quote-buttons{
+.quote-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     padding: auto;
-    
+
 }
 
-#new-quote, #copy-quote{
+#new-quote,
+#copy-quote {
     background-color: transparent;
     color: #ECEFF4;
     padding: 10px 20px;
-    border-color: #20293A; 
+    border-color: #20293A;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    cursor: pointer;  /* Cambiar el cursor al pasar el mouse */
 
 }
 
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    
+    background-color: #111729;
+    position: fixed;  /* Change 'left' to 'fixed' */
+    left: 0;  /* Add this line to position it at the left side of the screen */
+    /* height: 25%;     Adjusted to make the sidebar height cover the full screen height */ 
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: #fbfbfb;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.sidebar a.active {
+    color: white;
+    background-color: #6466E9;
+    font-size: 20px;
+ 
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
