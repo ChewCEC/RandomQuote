@@ -37,6 +37,7 @@ addEventListener('DOMContentLoaded', () => {
                 currentApi = API_ZEN
                 quoteText.textContent = '"' + data[0].q + '"';
                 quoteAutor.textContent = data[0].a;
+                quoteTags.innerHTML = '';
                 tagElement = document.createElement('span');
                 tagElement.classList.add('tag');
                 tagElement.textContent = 'no tags available';
