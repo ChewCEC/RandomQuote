@@ -32,6 +32,7 @@ addEventListener('DOMContentLoaded', () => {
                     tagElement.textContent = tag;
                     quoteTags.appendChild(tagElement);
                 });
+                
             }
             else if (quoteSource === API_ZEN) {
                 currentApi = API_ZEN
@@ -42,7 +43,6 @@ addEventListener('DOMContentLoaded', () => {
                 tagElement.classList.add('tag');
                 tagElement.textContent = 'no tags available';
                 quoteTags.appendChild(tagElement);
-
             }
             else if (quoteSource === API_FAVQS) {
                 currentApi = API_FAVQS
